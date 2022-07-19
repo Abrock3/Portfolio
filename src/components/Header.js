@@ -2,13 +2,10 @@ import React from "react";
 
 export default function Header({ displayedPage, pageSwapHandler }) {
   return (
-    <header id="header-main">
-      <h1>Adam Brock</h1>
-      <figure id="hero">
-        <section>
-          <h2>Full Stack Web Developer</h2>
-        </section>
-      </figure>
+    <div>
+      <header id="header-main">
+        <h1>Adam Brock</h1>
+      </header>
       <nav>
         <ul className="nav nav-tabs">
           <li className="nav-item">
@@ -16,7 +13,9 @@ export default function Header({ displayedPage, pageSwapHandler }) {
               onClick={() => pageSwapHandler("Home")}
               href="#home"
               className={
-                displayedPage === "Home" ? "nav-link active" : "nav-link"
+                displayedPage === "Home"
+                  ? "nav-link active"
+                  : "nav-link text-light"
               }
             >
               Home
@@ -27,7 +26,9 @@ export default function Header({ displayedPage, pageSwapHandler }) {
               onClick={() => pageSwapHandler("AboutMe")}
               href="#about-me"
               className={
-                displayedPage === "AboutMe" ? "nav-link active" : "nav-link"
+                displayedPage === "AboutMe"
+                  ? "nav-link active"
+                  : "nav-link text-light"
               }
             >
               About Me
@@ -38,18 +39,22 @@ export default function Header({ displayedPage, pageSwapHandler }) {
               onClick={() => pageSwapHandler("Portfolio")}
               href="#portfolio"
               className={
-                displayedPage === "Portfolio" ? "nav-link active" : "nav-link"
+                displayedPage === "Portfolio"
+                  ? "nav-link active"
+                  : "nav-link text-light"
               }
             >
               Portfolio
             </a>
-          </li>{" "}
+          </li>
           <li className="nav-item">
             <a
               onClick={() => pageSwapHandler("Resume")}
               href="#resume"
               className={
-                displayedPage === "Resume" ? "nav-link active" : "nav-link"
+                displayedPage === "Resume"
+                  ? "nav-link active"
+                  : "nav-link text-light"
               }
             >
               Resume
@@ -60,7 +65,9 @@ export default function Header({ displayedPage, pageSwapHandler }) {
               onClick={() => pageSwapHandler("ContactMe")}
               href="#contact-me"
               className={
-                displayedPage === "ContactMe" ? "nav-link active" : "nav-link"
+                displayedPage === "ContactMe"
+                  ? "nav-link active"
+                  : "nav-link text-light"
               }
             >
               Contact Me
@@ -68,6 +75,11 @@ export default function Header({ displayedPage, pageSwapHandler }) {
           </li>
         </ul>
       </nav>
-    </header>
+      <figure id="hero">
+        <section>
+          <h2>Full Stack Web Developer</h2>
+        </section>
+      </figure>
+    </div>
   );
 }

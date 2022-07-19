@@ -28,12 +28,12 @@ body {
 }
 
 #header-main {
-  height: 70px;
-  padding: 15px 0;
+  height: 75px;
+  padding: 8px 0;
   background-color: var(--main-bg-color);
 }
 
-/* repositions and styles the heading that contains my name */
+/* repositions and styles the top heading */
 header h1 {
   display: inline-block;
   font-size: 36px;
@@ -52,24 +52,22 @@ nav {
   font-size: 20px;
   background-color: var(--main-bg-color);
   border-bottom: solid black 1px;
-  padding-bottom: 5px;
+  padding-bottom: 1px;
   padding-left: 16px;
 }
 
 nav ul {
   float: left;
+  border-bottom: 0 !important;
 }
 
 nav ul li {
   display: inline-block;
-  margin: 0 4px 5px 4px;
 }
 
 nav ul li a {
   color: var(--main-bg-text-color);
   text-decoration: none;
-  border-bottom: solid var(--main-bg-text-color) 3px;
-  font-size: 80%;
 }
 
 #hero {
@@ -91,18 +89,20 @@ figure section {
   justify-content: center;
   align-items: center;
   background-color: var(--secondary-bg-color);
-  position: relative;
-  font-size: 18px;
-  padding: 2px 20px 2px 10px;
+  padding: 6px 20px 0 10px;
   color: var(--main-bg-text-color);
   border: solid var(--main-bg-text-color) 3px;
   border-right: none;
   border-radius: 12px 0 0 12px;
 }
 
+figure section h2 {
+  font-size: 18px;
+}
+
 /* decided to make a breakpoint for this because the subtitle was a little too long for smaller resolutions */
 @media only screen and (min-width: 400px) {
-  figure section {
+  figure section h2 {
     font-size: 24px;
   }
 }
@@ -280,7 +280,7 @@ footer {
   }
 
   /* size increase due to higher resolution */
-  figure section {
+  figure section h2 {
     font-size: 36px;
   }
 
@@ -339,5 +339,37 @@ footer {
   /* changed space between cards to reflect the increase in resolution */
   .small-card {
     margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  nav ul li a {
+    font-size: 60% !important;
+    padding: 7px 6px !important;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1099px) {
+  nav ul li a {
+    font-size: 70% !important;
+    padding: 13px 7px 13px 7px !important;
+  }
+}
+@media only screen and (min-width: 1100px) and (max-width: 1299){
+  nav ul li a {
+    font-size: 100% !important;
+    padding: 7px 7px 6px 7px !important;
+  }
+  nav ul li {
+    margin: 0 1px;
+  }
+}
+@media only screen and (min-width: 1100px) {
+    nav ul li a {
+    font-size: 100% !important;
+    padding: 7px 10px 6px 10px !important;
+  }
+  nav ul li {
+    margin: 0 1px;
   }
 }
