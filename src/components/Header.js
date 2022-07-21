@@ -6,7 +6,7 @@ export default function Header({ displayedPage, pageSwapHandler }) {
       <header id="header-main">
         <h1>Adam Brock</h1>
       </header>
-      <nav>
+      <nav id="navbar">
         <ul className="nav nav-tabs">
           <li className="nav-item">
             <a

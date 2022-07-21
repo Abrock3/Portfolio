@@ -1,17 +1,3 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
 :root {
   --main-bg-color: #2f4f4f;
   --secondary-bg-color: #7c0d0e;
@@ -29,13 +15,13 @@ body {
 
 #header-main {
   height: 75px;
-  padding: 8px 0;
+  display: flex;
+  align-items: center;
   background-color: var(--main-bg-color);
 }
 
 /* repositions and styles the top heading */
-header h1 {
-  display: inline-block;
+#header-main h1 {
   font-size: 36px;
   padding: 3px 15px 3px 20px;
   color: var(--main-bg-text-color);
@@ -43,72 +29,77 @@ header h1 {
   border: solid var(--main-bg-text-color) 3px;
   border-left: none;
   border-radius: 0 12px 12px 0;
+  margin: 0;
 }
 
-nav {
-  text-align: center;
+#navbar {
   width: 100%;
   float: left;
   font-size: 20px;
   background-color: var(--main-bg-color);
-  border-bottom: solid black 1px;
   padding-bottom: 1px;
-  padding-left: 16px;
+  padding-left: 13px;
 }
 
-nav ul {
+.nav {
   float: left;
-  border-bottom: 0 !important;
+  border-bottom: 0;
 }
 
-nav ul li {
+.nav-item {
   display: inline-block;
+  
 }
 
-nav ul li a {
+.nav-link {
   color: var(--main-bg-text-color);
   text-decoration: none;
+  font-size: 60%;
+  padding: 7px 6px;
 }
 
 #hero {
   height: 75px;
   width: 100%;
   margin-bottom: 25px;
-  background-image: url("../../images/roman-serdyuk-DL9Wz4YDa2s-unsplash.jpg");
+  background-image: url("../images/roman-serdyuk-DL9Wz4YDa2s-unsplash.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   border-bottom: solid #000000 1px;
+  border-top: solid #000000 1px;
 }
 
 /* this code repositions and styles the heading that's layered over the hero image */
-figure section {
+#hero section {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   background-color: var(--secondary-bg-color);
-  padding: 6px 20px 0 10px;
+  padding: 4px 20px 4px 10px;
   color: var(--main-bg-text-color);
   border: solid var(--main-bg-text-color) 3px;
   border-right: none;
   border-radius: 12px 0 0 12px;
 }
 
-figure section h2 {
+#hero section h2 {
   font-size: 18px;
+  margin: 0;
+  padding: 0;
 }
 
 /* decided to make a breakpoint for this because the subtitle was a little too long for smaller resolutions */
 @media only screen and (min-width: 400px) {
-  figure section h2 {
+  #hero section h2 {
     font-size: 24px;
   }
 }
 
 /* used the calc function with width to produce a margin that looks decent through multiple breakpoints */
-.container {
+.flex-container {
   margin: 10px 20px 20px 20px;
   width: calc(100% - 40px);
 }
@@ -131,13 +122,12 @@ figure section h2 {
 }
 
 #img-self {
-  box-sizing: content-box;
-  display: inline-block;
-  border: solid 3px #08094d;
-  height: 150px;
+  /* the color of this border is transparent because setting it caused display issues.
+ I had to resolve it by setting the background color and letting that be the border */
+  border: solid 3px transparent;
   background-color: #08094d;
+  height: 150px;
   margin-left: 10px;
-  outline: 0;
   float: right;
 }
 
@@ -151,13 +141,7 @@ figure section h2 {
 
 /* used calc in my flex basis with margin in a later element to produce equal space between all the work cards*/
 .work-card {
-  flex: 0 0 calc(50% - 5px);
   position: relative;
-  background-color: #08094d;
-}
-
-.big-card {
-  flex: 0 0 100%;
 }
 
 /* hover pseudo-class used to darken the work cards on hover */
@@ -169,19 +153,23 @@ figure section h2 {
 .work-card img {
   border: solid 4px #08094d;
   outline: 0;
-  border-bottom-width: 2px;
-  background-color: #08094d;
+  border-radius: 3px 3px 3px 3px;
   max-width: 100%;
   max-height: 100%;
 }
 
-/* this spaces the work cards from each other */
+.big-card {
+  flex: 0 0 100%;
+}
+
 .small-card {
+  /* this spaces the work cards from each other */
   margin-top: 10px;
+  /* this will be modified in a breakpoint later to produce smaller cards at higher resolutions */
+  flex: 0 0 100%;
 }
 
 /* repositions and styles the headings to layer them on top of the cards */
-
 .deployed-link {
   display: block;
   position: relative;
@@ -197,6 +185,8 @@ figure section h2 {
   color: var(--main-bg-text-color);
   font-size: 12px;
   padding-left: 7px;
+  margin: 0;
+  border-radius: 0 4px 4px 0;
 }
 
 .repo-link {
@@ -207,20 +197,23 @@ figure section h2 {
   background-color: #08094d;
   color: var(--main-bg-text-color);
   box-sizing: border-box;
+  text-decoration: none;
+  border-radius: 4px 0 0 4px;
 }
 
 .repo-link h4 {
   font-size: 10px;
   padding: 2px;
   padding-right: 4px;
+  margin: 0;
 }
 
-.big-card h3 {
+.work-card h3 {
   padding: 8px;
   font-size: 15px;
 }
 
-.big-card h4 {
+.work-card h4 {
   padding: 3px;
   font-size: 12px;
 }
@@ -248,16 +241,28 @@ footer {
 @media only screen and (min-width: 769px) {
   /* increased size of header to reflect a larger viewport */
   #header-main {
-    height: 85px;
+    height: 110px;
   }
 
   /* increase font size to reflect larger viewport */
-  header h1 {
+  #header-main h1 {
     font-size: 48px;
   }
   /* hides the nav bar background */
-  nav {
+  #navbar {
     height: 0;
+    margin: 0;
+    padding: 0;
+    width: 0;
+  }
+
+  .nav-link {
+    font-size: 70%;
+    padding: 10px 7px 10px 7px;
+  }
+
+  #img-self {
+    height: 250px;
   }
 
   address ul li {
@@ -267,11 +272,11 @@ footer {
   }
 
   /* repositions the nav bar in the header to help fill the space created by a wider viewport */
-  nav ul {
+  .nav {
     font-size: 28px;
     position: absolute;
-    top: 29px;
-    right: 20px;
+    top: 58px;
+    right: 12px;
   }
 
   /* height increase due to higher resolution */
@@ -280,31 +285,8 @@ footer {
   }
 
   /* size increase due to higher resolution */
-  figure section h2 {
+  #hero section h2 {
     font-size: 36px;
-  }
-
-  /* these next few blocks rearrange the headings of the content to the left side and formats them to reflect that */
-  .container {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .content-header {
-    flex: 0 0 19%;
-    border-bottom: none;
-    border-right: solid #08094d 4px;
-  }
-
-  .content-header h2 {
-    font-size: 32px;
-    text-align: end;
-    margin-right: 15px;
-  }
-
-  .content-section {
-    flex: 0 0 79%;
-    margin-bottom: 15px;
   }
 
   /* increased font size due to higher resolution in this breakpoint */
@@ -326,50 +308,45 @@ footer {
   .big-card h4 {
     font-size: 30px;
   }
-  /* changed space between cards to reflect the increase in resolution */
-  .work-card {
-    flex: 0 0 calc(50% - 10px);
-  }
-
-  /* set this again, as the .work-card code block immediately above this overrides the prior rule */
-  .big-card {
-    flex: 0 0 100%;
-  }
 
   /* changed space between cards to reflect the increase in resolution */
   .small-card {
+    flex: 0 0 calc(50% - 10px);
     margin-top: 20px;
   }
 }
 
-@media only screen and (max-width: 768px) {
-  nav ul li a {
-    font-size: 60% !important;
-    padding: 7px 6px !important;
+@media only screen and (min-width: 995px) {
+  /* these next few blocks rearrange the headings of the content to the left side and formats them to reflect that */
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .content-header {
+    flex: 0 0 15%;
+    border-bottom: none;
+    border-right: solid #08094d 4px;
+  }
+
+  .content-header h2 {
+    font-size: 32px;
+    text-align: end;
+    margin-right: 15px;
+  }
+
+  .content-section {
+    flex: 0 0 83%;
+    margin-bottom: 15px;
   }
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1099px) {
-  nav ul li a {
-    font-size: 70% !important;
-    padding: 13px 7px 13px 7px !important;
-  }
-}
-@media only screen and (min-width: 1100px) and (max-width: 1299){
-  nav ul li a {
-    font-size: 100% !important;
-    padding: 7px 7px 6px 7px !important;
-  }
-  nav ul li {
-    margin: 0 1px;
-  }
-}
 @media only screen and (min-width: 1100px) {
-    nav ul li a {
-    font-size: 100% !important;
-    padding: 7px 10px 6px 10px !important;
+  .nav-link {
+    font-size: 100%;
+    padding: 4px 10px 4px 10px;
   }
-  nav ul li {
+  .nav-item {
     margin: 0 1px;
   }
 }
