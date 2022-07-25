@@ -3,7 +3,7 @@ import photoOfMe from "../../images/photo-me.jpg";
 
 export default function AboutMe() {
   return (
-    <section className="flex-container" id="about-me">
+    <section className="flex-container" id="aboutMe">
       <header className="content-header">
         <h2>About Me</h2>
       </header>

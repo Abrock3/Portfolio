@@ -1,19 +1,16 @@
 import React, { useState } from "react";
 
-import Home from "./pages/Home";
 import AboutMe from "./pages/AboutMe";
 import ContactMe from "./pages/ContactMe";
 import Portfolio from "./pages/Portfolio";
 import Resume from "./pages/Resume";
 import Header from "./Header";
+import Footer from "./Footer";
 
 export default function PortfolioPage() {
   const [displayedPage, setDisplayedPage] = useState("Home");
 
   const renderPage = () => {
-    if (displayedPage === "Home") {
-      return <Home />;
-    }
     if (displayedPage === "AboutMe") {
       return <AboutMe />;
     }
@@ -29,9 +26,10 @@ export default function PortfolioPage() {
   const pageSwapHandler = (page) => setDisplayedPage(page);
 
   return (
-    <div>
+    <div className="d-flex flex-column min-vh-100">
       <Header displayedPage={displayedPage} pageSwapHandler={pageSwapHandler} />
       {renderPage()}
+      <Footer />
     </div>
   );
 }

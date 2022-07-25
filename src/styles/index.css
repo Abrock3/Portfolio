@@ -114,7 +114,7 @@ body {
 }
 
 /* this code enables the p element to wrap around the image */
-#about-me article p {
+#aboutMe article p {
   text-align: justify;
   margin: auto 0 auto 0;
   color: #08094d;
@@ -217,17 +217,24 @@ body {
   font-size: 12px;
 }
 
-address ul li a {
+.contact-anchor {
   color: #08094d;
   text-decoration: none;
 }
 
-footer {
+.footer {
+  background-color: #f5fffa;
   margin-top: 10px;
   text-align: center;
-  color: var(--main-bg-text-color);
-  background-color: var(--main-bg-color);
   padding: 20px;
+}
+
+.contact-link {
+  background-color: var(--main-bg-color);
+}
+
+.copyright {
+  background-color: rgb(55, 44, 44);
 }
 
 @media only screen and (min-width: 769px) {
@@ -257,8 +264,7 @@ footer {
     height: 250px;
   }
 
-  address ul li {
- 
+  .contact-list-item {
     display: inline-block;
     margin: 4px 4px 5px 4px;
   }
@@ -282,7 +288,7 @@ footer {
   }
 
   /* increased font size due to higher resolution in this breakpoint */
-  #about-me article p {
+  #aboutMe article p {
     font-size: 20px;
   }
 

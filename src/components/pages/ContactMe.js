@@ -34,14 +34,10 @@ const contactArray = [
     icon: faTwitter,
   },
 ];
-<li key="github" className="col-11">
-  <a target="_blank" rel="noreferrer" href="https://github.com/Abrock3">
-    <FontAwesomeIcon icon={faGithub} className="fa-8x" />
-  </a>
-</li>;
+
 export default function ContactMe() {
   return (
-    <section className="flex-container" id="contact-me">
+    <section className="flex-container" id="contacts">
       <header className="content-header">
         <h2>Contact Me</h2>
       </header>
@@ -53,12 +49,18 @@ export default function ContactMe() {
               className={
                 contactArray.length % 2 === 1 &&
                 (contactArray.length - 1) / 2 === index
-                  ? "d-flex justify-content-center col-11"
-                  : "d-flex justify-content-center col-5"
+                  ? `d-flex justify-content-center align-items-center flex-column col-11`
+                  : "d-flex justify-content-center align-items-center flex-column col-5"
               }
             >
-              <a href={contact.reference}>
-                <FontAwesomeIcon className="fa-7x" icon={contact.icon} />
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href={contact.reference}
+                class="contact-anchor d-flex flex-column align-items-center"
+              >
+                <FontAwesomeIcon className="fa-5x" icon={contact.icon} />
+                <h3 className="contact-label">{contact.type}</h3>
               </a>
             </li>
           ))}
