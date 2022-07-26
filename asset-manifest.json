@@ -1,16 +1,21 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.073c9b0a.css",
-    "main.js": "/Portfolio/static/js/main.68b8515f.js",
-    "static/js/787.b98c23e5.chunk.js": "/Portfolio/static/js/787.b98c23e5.chunk.js",
+    "main.css": "/Portfolio/static/css/main.fabbf963.css",
+    "main.js": "/Portfolio/static/js/main.3ebdef42.js",
+    "static/media/roman-serdyuk-DL9Wz4YDa2s-unsplash.jpg": "/Portfolio/static/media/roman-serdyuk-DL9Wz4YDa2s-unsplash.773068495c092bbc44fc.jpg",
+    "static/media/photo-me.jpg": "/Portfolio/static/media/photo-me.1c8fdac3f7a7275ef029.jpg",
+    "static/media/screenshot-talespinner.jpg": "/Portfolio/static/media/screenshot-talespinner.17fad50dd4a0770b9213.jpg",
+    "static/media/screenshot-employee-management-system.jpg": "/Portfolio/static/media/screenshot-employee-management-system.b107c6ce77c4d4ee1d22.jpg",
+    "static/media/screenshot-ecommerce-backend.jpg": "/Portfolio/static/media/screenshot-ecommerce-backend.41768b3205cc2ca11c36.jpg",
+    "static/media/screenshot-movie-finder.jpg": "/Portfolio/static/media/screenshot-movie-finder.1fc8da49e087125d2b95.jpg",
+    "static/media/screenshot-tech-forum.jpg": "/Portfolio/static/media/screenshot-tech-forum.591500263671ddc6c205.jpg",
     "static/media/logo.svg": "/Portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/Portfolio/index.html",
-    "main.073c9b0a.css.map": "/Portfolio/static/css/main.073c9b0a.css.map",
-    "main.68b8515f.js.map": "/Portfolio/static/js/main.68b8515f.js.map",
-    "787.b98c23e5.chunk.js.map": "/Portfolio/static/js/787.b98c23e5.chunk.js.map"
+    "main.fabbf963.css.map": "/Portfolio/static/css/main.fabbf963.css.map",
+    "main.3ebdef42.js.map": "/Portfolio/static/js/main.3ebdef42.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.68b8515f.js"
+    "static/css/main.fabbf963.css",
+    "static/js/main.3ebdef42.js"
   ]
 }
