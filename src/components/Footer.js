@@ -42,6 +42,7 @@ export default function Footer() {
         <section className="mb-4">
           {contactArray.map((contact, index) => (
             <a
+              key={contact.type}
               rel="noreferrer"
               target="_blank"
               className="btn btn-primary btn-floating m-1 contact-link"

@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 
-import AboutMe from "./pages/AboutMe";
-import ContactMe from "./pages/ContactMe";
-import Portfolio from "./pages/Portfolio";
-import Resume from "./pages/Resume";
+import AboutMe from "../pages/AboutMe";
+import ContactMe from "../pages/ContactMe";
+import Portfolio from "../pages/Portfolio";
+import Resume from "../pages/Resume";
 import Header from "./Header";
 import Footer from "./Footer";
 
 export default function PortfolioPage() {
-  const [displayedPage, setDisplayedPage] = useState("Home");
+  const [displayedPage, setDisplayedPage] = useState("AboutMe");
 
   const renderPage = () => {
     if (displayedPage === "AboutMe") {

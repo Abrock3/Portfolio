@@ -1,38 +1,39 @@
 import React from "react";
-const navArray = [
-  {
-    displayedPage: "AboutMe",
-    href: "#about-me",
-    linkText: "About Me",
-  },
-  {
-    displayedPage: "Portfolio",
-    href: "#about-me",
-    linkText: "Portfolio",
-  },
-  {
-    displayedPage: "Resume",
-    href: "#Resume",
-    linkText: "Resume",
-  },
-  {
-    displayedPage: "ContactMe",
-    href: "#contact-me",
-    linkText: "Contact Me",
-  },
-];
 
 export default function Navigation({ displayedPage, pageSwapHandler }) {
+  const navArray = [
+    {
+      page: "AboutMe",
+      href: "#about-me",
+      linkText: "About Me",
+    },
+    {
+      page: "Portfolio",
+      href: "#portfolio",
+      linkText: "Portfolio",
+    },
+    {
+      page: "Resume",
+      href: "#resume",
+      linkText: "Resume",
+    },
+    {
+      page: "ContactMe",
+      href: "#contact-me",
+      linkText: "Contact Me",
+    },
+  ];
+
   return (
     <nav id="navbar">
       <ul className="nav nav-tabs">
         {navArray.map((navItem) => (
-          <li className="nav-item">
+          <li className="nav-item" key={navItem.page}>
             <a
-              onClick={() => pageSwapHandler(navItem.displayedPage)}
+              onClick={() => pageSwapHandler(navItem.page)}
               href={navItem.href}
               className={
-                displayedPage === navItem.displayedPage
+                displayedPage === navItem.page
                   ? "nav-link active"
                   : "nav-link text-light"
               }

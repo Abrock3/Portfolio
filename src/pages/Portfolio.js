@@ -1,10 +1,11 @@
 import React from "react";
+import Project from "../components/Project";
 
-import taleSpinnerImage from "../../images/screenshot-talespinner.jpg";
-import techForumImage from "../../images/screenshot-tech-forum.jpg";
-import movieFinderImage from "../../images/screenshot-movie-finder.jpg";
-import employeeCMSImage from "../../images/screenshot-employee-management-system.jpg";
-import ecommerceBackendImage from "../../images/screenshot-ecommerce-backend.jpg";
+import taleSpinnerImage from "../images/screenshot-talespinner.jpg";
+import techForumImage from "../images/screenshot-tech-forum.jpg";
+import movieFinderImage from "../images/screenshot-movie-finder.jpg";
+import employeeCMSImage from "../images/screenshot-employee-management-system.jpg";
+import ecommerceBackendImage from "../images/screenshot-ecommerce-backend.jpg";
 
 const projectArray = [
   {
@@ -54,29 +55,7 @@ export default function Portfolio() {
       </header>
       <section className="content-section" id="work-card-container">
         {projectArray.map((project, index) => (
-          <div
-            className={
-              index === 0 ? "work-card big-card" : "work-card small-card"
-            }
-          >
-            <a
-              className="deployed-link"
-              rel="noreferrer"
-              target="_blank"
-              href={project.deployedURL}
-            >
-              <h3>{project.name}</h3>
-              <img src={project.image} alt={project.altAttribute} />
-            </a>
-            <a
-              className="repo-link"
-              rel="noreferrer"
-              target="_blank"
-              href={project.repoURL}
-            >
-              <h4>Repo Link</h4>
-            </a>
-          </div>
+          <Project project={project} index={index} key={project.name} />
         ))}
       </section>
     </section>
