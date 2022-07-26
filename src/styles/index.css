@@ -222,6 +222,10 @@ body {
   text-decoration: none;
 }
 
+.resume-link {
+  color: #08094d;
+}
+
 .footer {
   background-color: #f5fffa;
   margin-top: 10px;

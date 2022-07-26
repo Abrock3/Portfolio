@@ -4,7 +4,7 @@ export default function ContactForm() {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
-  const [errMsg, seterrMsg] = useState("");
+  const [errMsg, setErrMsg] = useState("");
 
   const handleTextChange = (event) => {
     const target = event.target;
@@ -22,24 +22,23 @@ export default function ContactForm() {
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
-
     if (!/(.+)@(.+){2,}\.(.+){2,6}/.test(email)) {
-      seterrMsg("Please type a valid email.");
+      setErrMsg("Please type a valid email.");
       return;
     }
     if (!name) {
-      seterrMsg("Please type your name.");
+      setErrMsg("Please type your name.");
       return;
     }
     if (!message) {
-      seterrMsg("Please type a message.");
+      setErrMsg("Please type a message.");
       return;
     }
 
     setName("");
     setMessage("");
     setEmail("");
-    seterrMsg("");
+    setErrMsg("");
   };
 
   return (
