@@ -9,8 +9,8 @@ export default function Resume() {
         <h2>Resume</h2>
       </header>
       <section className="content-section">
-        <div className="d-inline-block">
-          <div className="d-flex justify-content-around w-100">
+        <div className="d-flex flex-wrap">
+          <div className="d-flex flex-row flex-md-column justify-content-around me-3">
             <a
               rel="noreferrer"
               target="_blank"
@@ -32,26 +32,32 @@ export default function Resume() {
             </a>
             <br />
           </div>
-          <h3>Front-end Proficiencies:</h3>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Bootstrap</li>
-            <li>Handlebars</li>
-            <li>Responsive Design</li>
-          </ul>
-          <br />
-          <h3>Back-end Proficiencies</h3>
-          <ul>
-            <li>Node</li>
-            <li>Express JS</li>
-            <li>SQL/Sequelize</li>
-            <li>MongoDB/Mongoose</li>
-            <li>Socket.IO</li>
-            <li>GraphQL</li>
-          </ul>
+          <div className="d-flex flex-wrap">
+            <div className="me-3">
+              <h3>Front-end Proficiencies</h3>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Bootstrap</li>
+                <li>Handlebars</li>
+                <li>Responsive Design</li>
+              </ul>
+            </div>
+            <br />
+            <div>
+              <h3>Back-end Proficiencies</h3>
+              <ul>
+                <li>Node</li>
+                <li>Express JS</li>
+                <li>SQL/Sequelize</li>
+                <li>MongoDB/Mongoose</li>
+                <li>Socket.IO</li>
+                <li>GraphQL</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
     </section>
