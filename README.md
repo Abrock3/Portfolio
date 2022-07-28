@@ -33,6 +33,7 @@ This app was developed using VS code: https://code.visualstudio.com/
 
 
 Libraries and packages that were used to create this app:
+
 React: https://reactjs.org/ 
 
 Several FontAwesome icons: https://fontawesome.com/
