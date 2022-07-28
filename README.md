@@ -31,10 +31,14 @@ Screenshot of the app during function:
 
 This app was developed using VS code: https://code.visualstudio.com/
 
+
 Libraries and packages that were used to create this app:
-React: https://reactjs.org/
+React: https://reactjs.org/ 
+
 Several FontAwesome icons: https://fontawesome.com/
+
 Bootstrap: https://getbootstrap.com/
+
 gh-pages: https://www.npmjs.com/package/gh-pages
 
 Trey Eckels and the instructional staff at the boot camp I'm attending (GA Tech's Full Stack Web Dev course) were incredible, and without them I wouldn't have the skills to develop this app.
