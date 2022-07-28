@@ -69,6 +69,7 @@ body {
   align-items: center;
   border-bottom: solid #000000 1px;
   border-top: solid #000000 1px;
+  background-color: rgb(55, 44, 44);
 }
 
 /* this code repositions and styles the heading that's layered over the hero image */
@@ -139,31 +140,35 @@ body {
   align-items: flex-start;
 }
 
-/* used calc in my flex basis with margin in a later element to produce equal space between all the work cards*/
 .work-card {
   position: relative;
+  height: auto;
 }
 
-/* hover pseudo-class used to darken the work cards on hover */
+/* hover pseudo-class used to darken the work cards */
 .work-card a:hover {
   filter: brightness(50%);
   transition: all 0.5s ease;
 }
 
 .work-card img {
-  border: solid 4px #08094d;
+  /* The transparent color is to solve an issue I was having with the border displaying incorrectly.
+  The background color will display the correct color where the border should be. */
+  border: solid 4px transparent;
+  background-color: #08094d;
   outline: 0;
-  border-radius: 3px 3px 3px 3px;
+  border-radius: 3px;
   max-width: 100%;
-  max-height: 100%;
+  height: auto;
 }
 
 .big-card {
+  width: 100%;
   flex: 0 0 100%;
 }
 
 .small-card {
-  /* this spaces the work cards from each other */
+  /* this vertically spaces the work cards from each other */
   margin-top: 10px;
   /* this will be modified in a breakpoint later to produce smaller cards at higher resolutions */
   flex: 0 0 100%;
@@ -173,8 +178,6 @@ body {
 .deployed-link {
   display: block;
   position: relative;
-  height: 100%;
-  width: 100%;
 }
 
 .deployed-link h3 {
