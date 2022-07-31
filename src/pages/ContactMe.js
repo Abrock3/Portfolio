@@ -25,7 +25,7 @@ export default function ContactMe() {
       <address className="content-section d-flex flex-column flex-sm-row justify-content-between align-items-center">
         <ContactForm className="w-50" />
         <div className="d-inline-block w-100 h-100">
-          <ul className="p-0 d-flex justify-content-around flex-column align-items-center w-100 h-100">
+          <ul className="p-0 d-flex justify-content-around flex-row flex-sm-column align-items-center w-100 h-100">
             {contactArray.map((contact) => (
               <li
                 key={contact.type}

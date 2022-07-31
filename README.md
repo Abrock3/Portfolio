@@ -1,4 +1,5 @@
 # Portfolio
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
@@ -14,13 +15,11 @@ In addition, the app includes a "contact me" form; however this isn't functional
 - [License](#license)
 - [Questions](#questions)
 
-    
 ## Usage
 
 Link to the deployed app: https://abrock3.github.io/Portfolio/
 
-
-Screenshot of the app during function:
+Screenshots of the app during function:
 ![Screenshot](screenshots/ScreenshotAboutMe.jpg?raw=true "Screenshot")
 
 ![Screenshot](screenshots/ScreenshotPortfolio.jpg?raw=true "Screenshot")
@@ -31,10 +30,9 @@ Screenshot of the app during function:
 
 This app was developed using VS code: https://code.visualstudio.com/
 
-
 Libraries and packages that were used to create this app:
 
-React: https://reactjs.org/ 
+React: https://reactjs.org/
 
 Several FontAwesome icons: https://fontawesome.com/
 
@@ -47,7 +45,7 @@ Trey Eckels and the instructional staff at the boot camp I'm attending (GA Tech'
 ## License
 
 Copyright 2022 Adam Brock
-      
+
 This software is licensed using the MIT license: https://opensource.org/licenses/MIT.
 
 ## Questions
