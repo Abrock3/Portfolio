@@ -1,21 +1,31 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.a5fbf6bc.css",
-    "main.js": "/Portfolio/static/js/main.9eb4456e.js",
+    "main.css": "/Portfolio/static/css/main.20e62e19.css",
+    "main.js": "/Portfolio/static/js/main.6900a7db.js",
     "static/media/roman-serdyuk-DL9Wz4YDa2s-unsplash.jpg": "/Portfolio/static/media/roman-serdyuk-DL9Wz4YDa2s-unsplash.773068495c092bbc44fc.jpg",
     "static/media/photo-me.jpg": "/Portfolio/static/media/photo-me.1c8fdac3f7a7275ef029.jpg",
     "static/media/screenshot-talespinner.jpg": "/Portfolio/static/media/screenshot-talespinner.17fad50dd4a0770b9213.jpg",
+    "static/media/screenshot-toyzoid.jpg": "/Portfolio/static/media/screenshot-toyzoid.fb0ca0ffb9cff7e350bb.jpg",
     "static/media/screenshot-employee-management-system.jpg": "/Portfolio/static/media/screenshot-employee-management-system.b107c6ce77c4d4ee1d22.jpg",
     "static/media/screenshot-ecommerce-backend.jpg": "/Portfolio/static/media/screenshot-ecommerce-backend.41768b3205cc2ca11c36.jpg",
-    "static/media/screenshot-movie-finder.jpg": "/Portfolio/static/media/screenshot-movie-finder.1fc8da49e087125d2b95.jpg",
+    "static/media/reactThumb.png": "/Portfolio/static/media/reactThumb.8a6fc0a24a800d1e0f4a.png",
     "static/media/screenshot-tech-forum.jpg": "/Portfolio/static/media/screenshot-tech-forum.591500263671ddc6c205.jpg",
-    "static/media/logo.svg": "/Portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/bootstrapThumb.png": "/Portfolio/static/media/bootstrapThumb.01c340efb990fe45240d.png",
+    "static/media/socketIoThumb.png": "/Portfolio/static/media/socketIoThumb.e42334d601bf26b05e55.png",
+    "static/media/expressJsThumb.png": "/Portfolio/static/media/expressJsThumb.d917ab77f52c825710d6.png",
+    "static/media/handlebarsThumb.png": "/Portfolio/static/media/handlebarsThumb.9d0c14d176329bfef192.png",
+    "static/media/jwtThumb.png": "/Portfolio/static/media/jwtThumb.99b3973c141e145d68bf.png",
+    "static/media/sequelizeThumb.png": "/Portfolio/static/media/sequelizeThumb.68c721f7664ac4017ebd.png",
+    "static/media/apolloThumb.png": "/Portfolio/static/media/apolloThumb.769ffe6a6a49461120e9.png",
+    "static/media/bCryptThumb.png": "/Portfolio/static/media/bCryptThumb.44edf5e1d33ce2391cf0.png",
+    "static/media/mySqlThumb.png": "/Portfolio/static/media/mySqlThumb.7f9077e96a5481a5a71d.png",
+    "static/media/nodeJsThumb.png": "/Portfolio/static/media/nodeJsThumb.aa9d55e71a8dee98bfc2.png",
     "index.html": "/Portfolio/index.html",
-    "main.a5fbf6bc.css.map": "/Portfolio/static/css/main.a5fbf6bc.css.map",
-    "main.9eb4456e.js.map": "/Portfolio/static/js/main.9eb4456e.js.map"
+    "main.20e62e19.css.map": "/Portfolio/static/css/main.20e62e19.css.map",
+    "main.6900a7db.js.map": "/Portfolio/static/js/main.6900a7db.js.map"
   },
   "entrypoints": [
-    "static/css/main.a5fbf6bc.css",
-    "static/js/main.9eb4456e.js"
+    "static/css/main.20e62e19.css",
+    "static/js/main.6900a7db.js"
   ]
 }
