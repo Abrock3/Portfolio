@@ -12,7 +12,12 @@ export default function PortfolioPage() {
 
   const renderPage = () => {
     if (displayedPage === "AboutMe") {
-      return <AboutMe />;
+      return (
+        <AboutMe
+          displayedPage={displayedPage}
+          pageSwapHandler={pageSwapHandler}
+        />
+      );
     }
     if (displayedPage === "Portfolio") {
       return <Portfolio />;

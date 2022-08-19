@@ -2,7 +2,11 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import ContactForm from "../components/contactForm";
-
+import {
+  faTwitter,
+  faGithub,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
 const contactArray = [
   {
     type: "Email",
@@ -14,6 +18,21 @@ const contactArray = [
     reference: "tel:+17274009280",
     icon: faPhone,
   },
+  {
+    type: "GitHub",
+    reference: "https://github.com/Abrock3",
+    icon: faGithub,
+  },
+  {
+    type: "LinkedIn",
+    reference: "https://www.linkedin.com/in/adam-p-brock/",
+    icon: faLinkedin,
+  },
+  {
+    type: "Twitter",
+    reference: "https://twitter.com/chockabrock",
+    icon: faTwitter,
+  },
 ];
 
 export default function ContactMe() {
@@ -23,13 +42,17 @@ export default function ContactMe() {
         <h2>Contact Me</h2>
       </header>
       <address className="content-section d-flex flex-column flex-sm-row justify-content-between align-items-center">
-        <ContactForm className="w-50" />
+        {/* <ContactForm className="w-50" /> */}
         <div className="d-inline-block w-100 h-100">
-          <ul className="p-0 d-flex justify-content-around flex-row flex-sm-column align-items-center w-100 h-100">
+          <h4 className="mb-2">
+            Feel free to call, text, or email me if there's something you'd like
+            to chat about!
+          </h4>
+          <ul className="p-0 d-flex justify-content-start flex-row flex-wrap align-items-center w-100 h-100">
             {contactArray.map((contact) => (
               <li
                 key={contact.type}
-                className="d-flex justify-content-center align-items-center flex-column col-5"
+                className="d-flex justify-content-center align-items-center flex-column  col-4"
               >
                 <a
                   rel="noreferrer"

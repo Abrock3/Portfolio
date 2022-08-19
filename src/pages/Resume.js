@@ -14,7 +14,7 @@ export default function Resume() {
             <a
               rel="noreferrer"
               target="_blank"
-              href="https://drive.google.com/file/d/1XNvKHmqF7imc3Rp4S_Loua_8FVEXx5Ds/view?usp=sharing"
+              href="https://drive.google.com/file/d/1U_AoPTusTM16OoxvJiCCmnU9v9sw6l4A/view?usp=sharing"
               className="d-flex flex-column align-items-center text-decoration-none resume-link mx-2"
             >
               <FontAwesomeIcon className="fa-7x" icon={faDisplay} />
@@ -23,7 +23,7 @@ export default function Resume() {
             <a
               rel="noreferrer"
               target="_blank"
-              href="https://drive.google.com/uc?export=download&id=1XNvKHmqF7imc3Rp4S_Loua_8FVEXx5Ds"
+              href="https://drive.google.com/uc?export=download&id=1U_AoPTusTM16OoxvJiCCmnU9v9sw6l4A"
               className="d-flex flex-column align-items-center text-decoration-none resume-link mx-2"
               download
             >

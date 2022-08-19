@@ -122,14 +122,9 @@ body {
 }
 
 #img-self {
-  /* the color of this border is transparent because setting it caused display issues.
- I had to resolve it by setting the background color and letting that be the border */
-  border: solid 3px transparent;
-  background-color: #08094d;
   height: 150px;
-  margin-left: 10px;
-  float: right;
-  border-radius: 5px;
+  border: 3px solid transparent;
+  background-color:#08094d;
 }
 
 /* used the flex display property to help arrange my work cards */
@@ -142,24 +137,18 @@ body {
 
 .work-card {
   position: relative;
-  height: auto;
+  aspect-ratio: 7/3;
 }
 
 /* hover pseudo-class used to darken the work cards */
-.work-card a:hover {
+.deployed-link:hover {
   filter: brightness(50%);
   transition: all 0.5s ease;
 }
 
-.work-card img {
-  /* The transparent color is to solve an issue I was having with the border displaying incorrectly.
-  The background color will display the correct color where the border should be. */
-  border: solid 4px transparent;
-  background-color: #08094d;
-  outline: 0;
-  border-radius: 3px;
-  max-width: 100%;
-  height: auto;
+.repo-link:hover {
+  filter: brightness(50%);
+  transition: all 0.5s ease;
 }
 
 .big-card {
@@ -174,10 +163,15 @@ body {
   flex: 0 0 100%;
 }
 
+.tech-div {
+  max-width: 75%;
+}
+
 /* repositions and styles the headings to layer them on top of the cards */
 .deployed-link {
   display: block;
   position: relative;
+  border: 3px solid #08094d;
 }
 
 .deployed-link h3 {
@@ -194,7 +188,7 @@ body {
 
 .repo-link {
   position: absolute;
-  bottom: 15%;
+  bottom: 40%;
   right: 0;
   padding: 5px;
   background-color: #08094d;

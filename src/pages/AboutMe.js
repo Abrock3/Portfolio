@@ -1,25 +1,31 @@
 import React from "react";
 import photoOfMe from "../images/photo-me.jpg";
 
-export default function AboutMe() {
+export default function AboutMe({ displayedPage, pageSwapHandler }) {
   return (
     <section className="flex-container" id="aboutMe">
       <header className="content-header">
         <h2>About Me</h2>
       </header>
-      <article className="content-section">
-        <img src={photoOfMe} alt="Me in my kitchen" id="img-self" />
+
+      <article className="content-section col">
+        <img
+          src={photoOfMe}
+          alt="Me in my kitchen"
+          id="img-self"
+          className="float-end ms-3 rounded"
+        />
         <p>
-          Hey, I'm Adam Brock. Located in northern GA, I'm an avid gamer, a
-          nature lover, and a father in an amazing family. Since 2014, I worked
-          in the Market Research department of Universal Orlando Resort, and
-          worked my way up into a management role there. Now, in 2022 it's time
-          for a sharp turn into the world of web development. I'm currently
-          enrolled at Georgia Tech, taking a full stack web developer boot camp
-          with the intent to seek a web developer role after the course is
-          complete. I'm eager to learn more about the industry, and excited for
-          an opportunity to contribute to a fun team working towards a focused
-          goal.
+          Hey, I'm Adam Brock. Located in northern GA, I've just completed
+          Georgia Tech's full stack web development professional education
+          course, focusing on MERN stack web development. I've had a blast
+          learning it, and I'm incredibly excited to use my newly gained skills
+          to contribute to a fun team working towards a focused goal. Want to
+          ask me a question or chat? Visit my{" "}
+          <a href="#contact-me" onClick={() => pageSwapHandler("ContactMe")}>
+            contact me
+          </a>{" "}
+          page. I'm looking forward to it!
         </p>
       </article>
     </section>

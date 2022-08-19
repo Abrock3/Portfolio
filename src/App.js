@@ -1,6 +1,5 @@
-import logo from "./logo.svg";
-import PortfolioBody from "./components/PortfolioPage.js";
+import PortfolioPage from "./components/PortfolioPage.js";
 
-const App = () => <PortfolioBody />;
+const App = () => <PortfolioPage />;
 
 export default App;
