@@ -1,31 +1,31 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.20e62e19.css",
-    "main.js": "/Portfolio/static/js/main.6900a7db.js",
-    "static/media/roman-serdyuk-DL9Wz4YDa2s-unsplash.jpg": "/Portfolio/static/media/roman-serdyuk-DL9Wz4YDa2s-unsplash.773068495c092bbc44fc.jpg",
-    "static/media/photo-me.jpg": "/Portfolio/static/media/photo-me.1c8fdac3f7a7275ef029.jpg",
-    "static/media/screenshot-talespinner.jpg": "/Portfolio/static/media/screenshot-talespinner.17fad50dd4a0770b9213.jpg",
-    "static/media/screenshot-toyzoid.jpg": "/Portfolio/static/media/screenshot-toyzoid.fb0ca0ffb9cff7e350bb.jpg",
+    "main.css": "/Portfolio/static/css/main.8aeea0b9.css",
+    "main.js": "/Portfolio/static/js/main.f71fe995.js",
+    "static/media/roman-serdyuk-DL9Wz4YDa2s-unsplash.jpg": "/Portfolio/static/media/roman-serdyuk-DL9Wz4YDa2s-unsplash.e04178602b482e2d8f3d.jpg",
+    "static/media/photo-me.jpg": "/Portfolio/static/media/photo-me.6d1fb5e95425ea5d5aa5.jpg",
+    "static/media/screenshot-talespinner.jpg": "/Portfolio/static/media/screenshot-talespinner.0391d8762bc0fd0f978d.jpg",
+    "static/media/screenshot-toyzoid.jpg": "/Portfolio/static/media/screenshot-toyzoid.73549e3a946e6170c57e.jpg",
     "static/media/screenshot-employee-management-system.jpg": "/Portfolio/static/media/screenshot-employee-management-system.b107c6ce77c4d4ee1d22.jpg",
     "static/media/screenshot-ecommerce-backend.jpg": "/Portfolio/static/media/screenshot-ecommerce-backend.41768b3205cc2ca11c36.jpg",
-    "static/media/reactThumb.png": "/Portfolio/static/media/reactThumb.8a6fc0a24a800d1e0f4a.png",
+    "static/media/reactThumb.png": "/Portfolio/static/media/reactThumb.3251216a250bc2cc0fa7.png",
     "static/media/screenshot-tech-forum.jpg": "/Portfolio/static/media/screenshot-tech-forum.591500263671ddc6c205.jpg",
     "static/media/bootstrapThumb.png": "/Portfolio/static/media/bootstrapThumb.01c340efb990fe45240d.png",
     "static/media/socketIoThumb.png": "/Portfolio/static/media/socketIoThumb.e42334d601bf26b05e55.png",
     "static/media/expressJsThumb.png": "/Portfolio/static/media/expressJsThumb.d917ab77f52c825710d6.png",
     "static/media/handlebarsThumb.png": "/Portfolio/static/media/handlebarsThumb.9d0c14d176329bfef192.png",
-    "static/media/jwtThumb.png": "/Portfolio/static/media/jwtThumb.99b3973c141e145d68bf.png",
+    "static/media/jwtThumb.png": "/Portfolio/static/media/jwtThumb.c0d545fce6ef66ce6fd5.png",
     "static/media/sequelizeThumb.png": "/Portfolio/static/media/sequelizeThumb.68c721f7664ac4017ebd.png",
-    "static/media/apolloThumb.png": "/Portfolio/static/media/apolloThumb.769ffe6a6a49461120e9.png",
+    "static/media/apolloThumb.png": "/Portfolio/static/media/apolloThumb.46125912c7628e21f892.png",
     "static/media/bCryptThumb.png": "/Portfolio/static/media/bCryptThumb.44edf5e1d33ce2391cf0.png",
     "static/media/mySqlThumb.png": "/Portfolio/static/media/mySqlThumb.7f9077e96a5481a5a71d.png",
     "static/media/nodeJsThumb.png": "/Portfolio/static/media/nodeJsThumb.aa9d55e71a8dee98bfc2.png",
     "index.html": "/Portfolio/index.html",
-    "main.20e62e19.css.map": "/Portfolio/static/css/main.20e62e19.css.map",
-    "main.6900a7db.js.map": "/Portfolio/static/js/main.6900a7db.js.map"
+    "main.8aeea0b9.css.map": "/Portfolio/static/css/main.8aeea0b9.css.map",
+    "main.f71fe995.js.map": "/Portfolio/static/js/main.f71fe995.js.map"
   },
   "entrypoints": [
-    "static/css/main.20e62e19.css",
-    "static/js/main.6900a7db.js"
+    "static/css/main.8aeea0b9.css",
+    "static/js/main.f71fe995.js"
   ]
 }
