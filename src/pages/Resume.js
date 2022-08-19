@@ -53,6 +53,7 @@ export default function Resume() {
                 <li>Express JS</li>
                 <li>SQL/Sequelize</li>
                 <li>MongoDB/Mongoose</li>
+                <li>Apollo GraphQL</li>
                 <li>Socket.IO</li>
                 <li>GraphQL</li>
               </ul>
