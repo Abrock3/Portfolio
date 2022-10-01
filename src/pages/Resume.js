@@ -55,7 +55,6 @@ export default function Resume() {
                 <li>MongoDB/Mongoose</li>
                 <li>Apollo GraphQL</li>
                 <li>Socket.IO</li>
-                <li>GraphQL</li>
               </ul>
             </div>
           </div>

@@ -1,11 +1,10 @@
 import React from "react";
 import Navigation from "./Navigation.js";
-
 export default function Header({ displayedPage, pageSwapHandler }) {
   return (
     <div>
       <header id="header-main">
-        <h1>Adam Brock</h1>
+        <h1 class="d-flex align-items-center">Adam Brock</h1>
       </header>
       <Navigation
         displayedPage={displayedPage}

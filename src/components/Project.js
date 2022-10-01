@@ -6,6 +6,7 @@ export default function Project({ project, index }) {
     <div
       className={index === 0 ? "work-card big-card" : "work-card small-card"}
     >
+      
       <div className="w-100 h-100">
         <a
           className="deployed-link rounded w-100 h-100 portfolio-image"

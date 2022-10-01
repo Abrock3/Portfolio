@@ -114,6 +114,9 @@ body {
   margin-top: 15px;
 }
 
+.logo {
+  height: 50px;
+}
 /* this code enables the p element to wrap around the image */
 #aboutMe article p {
   text-align: justify;
@@ -124,7 +127,7 @@ body {
 #img-self {
   height: 150px;
   border: 3px solid transparent;
-  background-color:#08094d;
+  background-color: #08094d;
 }
 
 /* used the flex display property to help arrange my work cards */
