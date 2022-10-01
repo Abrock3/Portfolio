@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.8aeea0b9.css",
-    "main.js": "/Portfolio/static/js/main.9552b9d6.js",
+    "main.css": "/Portfolio/static/css/main.fe915288.css",
+    "main.js": "/Portfolio/static/js/main.1bb444d3.js",
     "static/media/roman-serdyuk-DL9Wz4YDa2s-unsplash.jpg": "/Portfolio/static/media/roman-serdyuk-DL9Wz4YDa2s-unsplash.e04178602b482e2d8f3d.jpg",
     "static/media/photo-me.jpg": "/Portfolio/static/media/photo-me.6d1fb5e95425ea5d5aa5.jpg",
     "static/media/screenshot-talespinner.jpg": "/Portfolio/static/media/screenshot-talespinner.0391d8762bc0fd0f978d.jpg",
@@ -21,11 +21,11 @@
     "static/media/mySqlThumb.png": "/Portfolio/static/media/mySqlThumb.7f9077e96a5481a5a71d.png",
     "static/media/nodeJsThumb.png": "/Portfolio/static/media/nodeJsThumb.aa9d55e71a8dee98bfc2.png",
     "index.html": "/Portfolio/index.html",
-    "main.8aeea0b9.css.map": "/Portfolio/static/css/main.8aeea0b9.css.map",
-    "main.9552b9d6.js.map": "/Portfolio/static/js/main.9552b9d6.js.map"
+    "main.fe915288.css.map": "/Portfolio/static/css/main.fe915288.css.map",
+    "main.1bb444d3.js.map": "/Portfolio/static/js/main.1bb444d3.js.map"
   },
   "entrypoints": [
-    "static/css/main.8aeea0b9.css",
-    "static/js/main.9552b9d6.js"
+    "static/css/main.fe915288.css",
+    "static/js/main.1bb444d3.js"
   ]
 }
