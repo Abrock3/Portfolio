@@ -16,12 +16,19 @@ export default function AboutMe({ displayedPage, pageSwapHandler }) {
           className="float-end ms-3 rounded"
         />
         <p>
-          Hey, I'm Adam Brock. Located in northern GA, I've just completed
+          Hey, I'm Adam Brock. Located in northern GA, I've just completed3
           Georgia Tech's full stack web development professional education
           course, focusing on MERN stack web development. I've had a blast
+<<<<<<< HEAD
           learning it, and I'm incredibly excited to use my newly gained skills
           to contribute to a fun team working towards a focused goal. Want to
           ask me a question or chat? Visit my{" "}
+=======
+          learning it and really developed a passion for creating elegant,
+          simple solutions to complex problems. I'm incredibly excited to use my
+          newly gained skills to contribute to a fun team working towards a
+          focused goal. Want to ask me a question or chat? Visit my{" "}
+>>>>>>> parent of b5bb6d2 (Rolling back to a previous version)
           <a href="#contact-me" onClick={() => pageSwapHandler("ContactMe")}>
             contact me
           </a>{" "}
