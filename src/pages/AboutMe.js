@@ -16,7 +16,7 @@ export default function AboutMe({ displayedPage, pageSwapHandler }) {
           className="float-end ms-3 rounded"
         />
         <p>
-          Hey, I'm Adam Brock. Located in northern GA, I've just completed3
+          Hey, I'm Adam Brock. Located in northern GA, I've just completed
           Georgia Tech's full stack web development professional education
           course, focusing on MERN stack web development. I've had a blast
           learning it and really developed a passion for creating elegant,

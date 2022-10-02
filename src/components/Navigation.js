@@ -1,45 +1,42 @@
-import React from "react";
-
-export default function Navigation({ displayedPage, pageSwapHandler }) {
-  const navArray = [
-    {
-      page: "AboutMe",
-      href: "#about-me",
-      linkText: "About Me",
-    },
-    {
-      page: "Portfolio",
-      href: "#portfolio",
-      linkText: "Portfolio",
-    },
-    {
-      page: "Resume",
-      href: "#resume",
-      linkText: "Resume",
-    },
-    {
-      page: "ContactMe",
-      href: "#contact-me",
-      linkText: "Contact Me",
-    },
-  ];
-
+import React, { useEffect } from "react";
+import { useNavigate, Link } from "react-router-dom";
+const navArray = [
+  {
+    href: "/about-me",
+    linkText: "About Me",
+  },
+  {
+    href: "/portfolio",
+    linkText: "Portfolio",
+  },
+  {
+    href: "/resume",
+    linkText: "Resume",
+  },
+  {
+    href: "/contact-me",
+    linkText: "Contact Me",
+  },
+];
+export default function Navigation() {
+  let history = useNavigate();
+  // forces a rerender of this component when the URL changes so it can adjust its style
+  useEffect(() => {}, [history]);
   return (
     <nav id="navbar">
       <ul className="nav nav-tabs">
         {navArray.map((navItem) => (
-          <li className="nav-item" key={navItem.page}>
-            <a
-              onClick={() => pageSwapHandler(navItem.page)}
-              href={navItem.href}
+          <li className="nav-item" key={navItem.href}>
+            <Link
+              to={navItem.href}
               className={
-                displayedPage === navItem.page
+                window.location.pathname === navItem.href
                   ? "nav-link active"
                   : "nav-link text-light"
               }
             >
               {navItem.linkText}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>
