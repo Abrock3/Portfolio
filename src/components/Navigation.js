@@ -6,7 +6,7 @@ const navArray = [
     linkText: "About Me",
   },
   {
-    href: "/portfolio",
+    href: "/work",
     linkText: "Portfolio",
   },
   {
