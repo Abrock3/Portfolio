@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import photoOfMe from "../images/photo-me.jpg";
 
 export default function AboutMe({ displayedPage, pageSwapHandler }) {
@@ -23,10 +24,8 @@ export default function AboutMe({ displayedPage, pageSwapHandler }) {
           simple solutions to complex problems. I'm incredibly excited to use my
           newly gained skills to contribute to a fun team working towards a
           focused goal. Want to ask me a question or chat? Visit my{" "}
-          <a href="#contact-me" onClick={() => pageSwapHandler("ContactMe")}>
-            contact me
-          </a>{" "}
-          page. I'm looking forward to it!
+          <Link to="/contact-me">contact me</Link> page. I'm looking forward to
+          it!
         </p>
       </article>
     </section>
