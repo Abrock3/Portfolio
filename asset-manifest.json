@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.fe915288.css",
-    "main.js": "/Portfolio/static/js/main.1bb444d3.js",
+    "main.css": "/Portfolio/static/css/main.10f0173f.css",
+    "main.js": "/Portfolio/static/js/main.a54d94a9.js",
     "static/media/roman-serdyuk-DL9Wz4YDa2s-unsplash.jpg": "/Portfolio/static/media/roman-serdyuk-DL9Wz4YDa2s-unsplash.e04178602b482e2d8f3d.jpg",
-    "static/media/photo-me.jpg": "/Portfolio/static/media/photo-me.6d1fb5e95425ea5d5aa5.jpg",
-    "static/media/screenshot-talespinner.jpg": "/Portfolio/static/media/screenshot-talespinner.0391d8762bc0fd0f978d.jpg",
-    "static/media/screenshot-toyzoid.jpg": "/Portfolio/static/media/screenshot-toyzoid.73549e3a946e6170c57e.jpg",
-    "static/media/screenshot-employee-management-system.jpg": "/Portfolio/static/media/screenshot-employee-management-system.b107c6ce77c4d4ee1d22.jpg",
-    "static/media/screenshot-ecommerce-backend.jpg": "/Portfolio/static/media/screenshot-ecommerce-backend.41768b3205cc2ca11c36.jpg",
+    "static/media/screenshot-talespinner.jpg": "/Portfolio/static/media/screenshot-talespinner.bbf5ae1a31b9f373d88e.jpg",
+    "static/media/photo-me.jpg": "/Portfolio/static/media/photo-me.3e87376ea838536d78a0.jpg",
+    "static/media/screenshot-toyzoid.jpg": "/Portfolio/static/media/screenshot-toyzoid.d5f7c4d8c7092c88c78a.jpg",
+    "static/media/screenshot-employee-management-system.jpg": "/Portfolio/static/media/screenshot-employee-management-system.07ee783b950bb8942f80.jpg",
+    "static/media/screenshot-ecommerce-backend.jpg": "/Portfolio/static/media/screenshot-ecommerce-backend.8d47bfbae716f0469335.jpg",
     "static/media/reactThumb.png": "/Portfolio/static/media/reactThumb.3251216a250bc2cc0fa7.png",
-    "static/media/screenshot-tech-forum.jpg": "/Portfolio/static/media/screenshot-tech-forum.591500263671ddc6c205.jpg",
+    "static/media/screenshot-tech-forum.jpg": "/Portfolio/static/media/screenshot-tech-forum.719d17da9f0bc0afa9b2.jpg",
     "static/media/bootstrapThumb.png": "/Portfolio/static/media/bootstrapThumb.01c340efb990fe45240d.png",
     "static/media/socketIoThumb.png": "/Portfolio/static/media/socketIoThumb.e42334d601bf26b05e55.png",
     "static/media/expressJsThumb.png": "/Portfolio/static/media/expressJsThumb.d917ab77f52c825710d6.png",
@@ -21,11 +21,11 @@
     "static/media/mySqlThumb.png": "/Portfolio/static/media/mySqlThumb.7f9077e96a5481a5a71d.png",
     "static/media/nodeJsThumb.png": "/Portfolio/static/media/nodeJsThumb.aa9d55e71a8dee98bfc2.png",
     "index.html": "/Portfolio/index.html",
-    "main.fe915288.css.map": "/Portfolio/static/css/main.fe915288.css.map",
-    "main.1bb444d3.js.map": "/Portfolio/static/js/main.1bb444d3.js.map"
+    "main.10f0173f.css.map": "/Portfolio/static/css/main.10f0173f.css.map",
+    "main.a54d94a9.js.map": "/Portfolio/static/js/main.a54d94a9.js.map"
   },
   "entrypoints": [
-    "static/css/main.fe915288.css",
-    "static/js/main.1bb444d3.js"
+    "static/css/main.10f0173f.css",
+    "static/js/main.a54d94a9.js"
   ]
 }
