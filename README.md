@@ -17,7 +17,7 @@ In addition, the app includes a "contact me" form; however this isn't functional
 
 ## Usage
 
-Link to the deployed app: https://abrock3.github.io/portfolio
+Link to the deployed app: https://abrock3.github.io/Portfolio/
 
 Screenshots of the app during function:
 ![Screenshot](screenshots/ScreenshotAboutMe.jpg?raw=true "Screenshot")

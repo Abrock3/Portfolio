@@ -144,11 +144,14 @@ body {
 }
 
 /* hover pseudo-class used to darken the work cards */
-.hover-container:hover,
+.deployed-link:hover {
+  filter: brightness(50%);
+  transition: all 0.5s ease;
+}
+
 .repo-link:hover {
   filter: brightness(50%);
   transition: all 0.5s ease;
-  cursor: pointer;
 }
 
 .big-card {
@@ -170,14 +173,13 @@ body {
 /* repositions and styles the headings to layer them on top of the cards */
 .deployed-link {
   display: block;
+  position: relative;
   border: 3px solid #08094d;
 }
 
-.deployed-link-header {
+.deployed-link h3 {
   position: absolute;
-  display: inline-block;
   top: 15%;
-  left: 0;
   padding: 5px;
   background-color: #08094d;
   color: var(--main-bg-text-color);

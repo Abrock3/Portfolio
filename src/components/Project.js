@@ -6,20 +6,20 @@ export default function Project({ project, index }) {
     <div
       className={index === 0 ? "work-card big-card" : "work-card small-card"}
     >
+      
       <div className="w-100 h-100">
-        <div className="w-100 h-100 hover-container">
-          <a
-            className="deployed-link rounded w-100 h-100 portfolio-image"
-            rel="noreferrer"
-            target="_blank"
-            href={project.deployedURL}
-            style={{
-              background: `transparent url(${project.image}) no-repeat center center scroll`,
-              backgroundSize: "cover",
-            }}
-          ></a>
-          <h3 class="deployed-link-header">{project.name}</h3>
-        </div>
+        <a
+          className="deployed-link rounded w-100 h-100 portfolio-image"
+          rel="noreferrer"
+          target="_blank"
+          href={project.deployedURL}
+          style={{
+            background: `transparent url(${project.image}) no-repeat center center scroll`,
+            backgroundSize: "cover",
+          }}
+        >
+          <h3>{project.name}</h3>
+        </a>
         <a
           className="repo-link"
           rel="noreferrer"

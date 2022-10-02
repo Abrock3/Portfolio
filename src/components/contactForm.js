@@ -2,7 +2,20 @@ import React, { useState } from "react";
 // import emailjs from "emailjs-com";
 
 export default function ContactForm() {
+  // function sendEmail(e) {
+  //   e.preventDefault(); //This is important, i'm not sure why, but the email won't send without it
 
+  //   emailjs
+  //     .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_USER_ID")
+  //     .then(
+  //       (result) => {
+  //         window.location.reload(); //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior)
+  //       },
+  //       (error) => {
+  //         console.log(error.text);
+  //       }
+  //     );
+  // }
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
