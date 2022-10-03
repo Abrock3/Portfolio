@@ -1,4 +1,5 @@
 import React from "react";
+import ReactTooltip from "react-tooltip";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -41,16 +42,20 @@ export default function Footer() {
       <div className="container-fluid p-4 pb-0">
         <section className="mb-4">
           {contactArray.map((contact, index) => (
-            <a
-              key={contact.type}
-              rel="noreferrer"
-              target="_blank"
-              className="btn btn-primary btn-floating m-1 contact-link"
-              href={contact.reference}
-              role="button"
-            >
-              <FontAwesomeIcon icon={contact.icon} />
-            </a>
+            <>
+              <a
+                key={contact.type}
+                rel="noreferrer"
+                target="_blank"
+                className="btn btn-primary btn-floating m-1 contact-link"
+                href={contact.reference}
+                role="button"
+                data-tip={contact.type}
+              >
+                <FontAwesomeIcon icon={contact.icon} />
+              </a>
+              <ReactTooltip place="top" type="dark" effect="float" />
+            </>
           ))}
         </section>
       </div>
