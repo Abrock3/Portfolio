@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import photoOfMe from "../images/photo-me.jpg";
+import photoOfMe from "../images/photo-me.webp";
 
 export default function AboutMe({ displayedPage, pageSwapHandler }) {
   return (
