@@ -5,18 +5,18 @@ import techForumImage from "../images/screenshot-tech-forum.webp";
 import toyZoidImage from "../images/screenshot-toyzoid.webp";
 import employeeCMSImage from "../images/screenshot-employee-management-system.webp";
 import ecommerceBackendImage from "../images/screenshot-ecommerce-backend.webp";
-import nodeJs from "../images/techIcons/nodeJsThumb.png";
-import expressJs from "../images/techIcons/expressJsThumb.png";
-import sequelize from "../images/techIcons/sequelizeThumb.png";
-import socketIo from "../images/techIcons/socketIoThumb.png";
+import nodeJs from "../images/techIcons/nodeJsThumb.svg";
+import expressJs from "../images/techIcons/expressJsThumb.svg";
+import sequelize from "../images/techIcons/sequelizeThumb.svg";
+import socketIo from "../images/techIcons/socketIoThumb.svg";
 import bCrypt from "../images/techIcons/bCryptThumb.png";
-import handlebars from "../images/techIcons/handlebarsThumb.png";
-import bootstrap from "../images/techIcons/bootstrapThumb.png";
-import mySql from "../images/techIcons/mySqlThumb.png";
-import react from "../images/techIcons/reactThumb.png";
-import apollo from "../images/techIcons/apolloThumb.png";
+import handlebars from "../images/techIcons/handlebarsThumb.svg";
+import bootstrap from "../images/techIcons/bootstrapThumb.svg";
+import mySql from "../images/techIcons/mySqlThumb.svg";
+import react from "../images/techIcons/reactThumb.svg";
+import apollo from "../images/techIcons/apolloThumb.svg";
 import mongoose from "../images/techIcons/mongooseThumb.png";
-import jwt from "../images/techIcons/jwtThumb.png";
+import jwt from "../images/techIcons/jwtThumb.svg";
 
 const projectArray = [
   {

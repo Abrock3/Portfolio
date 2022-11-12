@@ -41,6 +41,7 @@ export default function Project({ project, index }) {
                 alt={tech.name}
                 className="mh-100 me-1"
                 data-tip={tech.name}
+                style={{aspectRatio:"1/1"}}
               />
               <ReactTooltip place="top" type="dark" effect="float" />
             </>
